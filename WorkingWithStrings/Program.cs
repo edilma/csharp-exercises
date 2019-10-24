@@ -38,7 +38,7 @@ namespace WorkingWithStrings
                 myString.Append("--");
                 myString.Append(i);
             }
-
+            // need to finish working with the stringBuilder
 
 
 
