@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-PrintListLetter", "2-Prin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-PrintArray", "2-PrintArray\2-PrintArray.csproj", "{6B8B8377-C0AE-4A8D-BD83-D449FDAE45B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingListVideo", "WorkingListVideo\WorkingListVideo.csproj", "{3A730630-CEFB-49C7-A169-367B09009CF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +88,10 @@ Global
 		{6B8B8377-C0AE-4A8D-BD83-D449FDAE45B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B8B8377-C0AE-4A8D-BD83-D449FDAE45B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B8B8377-C0AE-4A8D-BD83-D449FDAE45B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A730630-CEFB-49C7-A169-367B09009CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A730630-CEFB-49C7-A169-367B09009CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A730630-CEFB-49C7-A169-367B09009CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A730630-CEFB-49C7-A169-367B09009CF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
