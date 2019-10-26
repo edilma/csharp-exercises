@@ -22,6 +22,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GasConsume", "GasConsume\Ga
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchAlice", "SearchAlice\SearchAlice.csproj", "{3683F599-C65A-4A37-AC06-21EA48453AFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Area", "AreaCircle\Area.csproj", "{D8BFDBF9-264C-4B25-B723-10DF50ABF430}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListSumElements", "ListSumElements\ListSumElements.csproj", "{48CCF9B6-6A01-49BB-A850-57D5C128B14B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-PrintListLetter", "2-PrintListLetter\2-PrintListLetter.csproj", "{BC33174A-A96C-41E4-80E0-CCC7712FA813}"
