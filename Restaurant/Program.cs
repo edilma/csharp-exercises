@@ -39,8 +39,9 @@ namespace Restaurant
             chilis.MenuItems.Add(item2);
             chilis.MenuItems.Add(item3);
 
+            chilis.AddItem(item5);
 
-
+            //Console.WriteLine("The Menu was created at 2:36:44 - check that this {0} should be equal " , chilis.GetDate());
 
             //Console.WriteLine(chilis.MenuItems); 
 
@@ -50,12 +51,14 @@ namespace Restaurant
             // Console.WriteLine("The {0} menu of chilis. For {1} ", wendys.MenuName, wendys.category);
 
             //Console.WriteLine(" Date creation of {0} Menu was {1}", wendys.MenuName, wendys.GetDate());
-            List<MenuItem> chiliItems ;
-            chiliItems.Add(item1);
+            Console.WriteLine("The total item5 of chilis should be 4==  {0}" , chilis.MenuItems.Count);
+            Console.WriteLine("includes the following items: " +chilis.printMenu(chilis.MenuItems) );
+
+            chilis.RemoveItem(item5);
+            Console.WriteLine("includes the following items: " + chilis.printMenu(chilis.MenuItems));
 
 
-           
-            Console.WriteLine("Print all the items : ",item5.getItemNames());
+            // Console.WriteLine("Print all the items : ",item5.getItemNames());
 
 
 

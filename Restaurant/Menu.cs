@@ -19,26 +19,11 @@ namespace Restaurant
         public string MenuName { get; set; }
         public MenuItem item { get; set; }
 
-        /*
-        public DateTime DateMenu 
-            {
-           
-            set { DateTime dateMenu = DateTime.Now; }
-            }
-        
+        private DateTime Date { get; set; }
 
-            
-        public DateTime dateMenu
-        {
-            get
-            { return dateMenu; }
-            set { 
-                dateMenu = DateTime.Now; }
-        
-        }
-        */
-       
-                
+        DateTime date = DateTime.Now;
+
+                     
         public Category category{ get; private set; }
 
 
@@ -47,6 +32,7 @@ namespace Restaurant
         {
             this.category = category;
             MenuName = menuName;
+            this.Date = date;
             //this.dateMenu = GetDate();
         }
 
@@ -57,21 +43,27 @@ namespace Restaurant
         }
 
         
-       /*
+      
         public DateTime GetDate()
         {
-           return dateMenu;
+           return Date;
         }
-       */
+      
         
 
-        /*
         public List<MenuItem> AddItem(MenuItem item)
         {
            
-            return RestMenuItems.Add(item);
+            MenuItems.Add(item);
+            return MenuItems;
         }
-        */
+
+        public List<MenuItem> RemoveItem(MenuItem item)
+        {
+
+            MenuItems.Remove(item);
+            return MenuItems;
+        }
 
         public string printMenu(List<MenuItem> MenuItems)
         {

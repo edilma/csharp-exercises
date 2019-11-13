@@ -34,6 +34,11 @@ namespace Restaurant
             Price = price;
         }
 
+        public MenuItem( )
+        {
+        }
+
+
         public List<MenuItem> AllItems = new List<MenuItem>();
         public List<MenuItem> GetItems()
         {
