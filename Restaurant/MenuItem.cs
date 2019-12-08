@@ -6,9 +6,17 @@ namespace Restaurant
 {
     class MenuItem
     {
+        private static int nextItemId = 1;
+        public int ItemId { get; set; }
         public string ItemName { get; set; }
         public string ItemDescription { get; set; }
         public double Price { get;  set; }
+        private DateTime dateCreated;
+        public DateTime DateCreated
+        {
+            get { return dateCreated; }
+        }
+        
 
         /*  ARREGLAR MENUS CREATION DATE
          public DateTime creation
@@ -25,13 +33,16 @@ namespace Restaurant
          }
          */
 
-        
+
 
         public MenuItem(string itemName, string itemDescription,double price)
         {
+            ItemId = nextItemId++;
             ItemName = itemName;
             ItemDescription = itemDescription;
             Price = price;
+            dateCreated = DateTime.Now;
+            
         }
 
         public MenuItem( )
@@ -43,6 +54,19 @@ namespace Restaurant
         public List<MenuItem> GetItems()
         {
             return AllItems;
+        }
+
+        public bool newItem()
+        {
+            DateTime today = DateTime.Now;
+            if ((dateCreated.AddDays(14)> DateTime.Now ))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         /*
         public List<MenuItem> getItemNames()

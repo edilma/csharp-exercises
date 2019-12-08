@@ -15,28 +15,35 @@ namespace Restaurant
 
         public List<MenuItem> MenuItems = new List<MenuItem>();
 
-        
+        private DateTime dateMenuUpdated;
+        public DateTime DateMenuUpdated { get; set; }
+
+
         public string MenuName { get; set; }
-        public MenuItem item { get; set; }
+        public MenuItem item { get; set; } // chequear si esto o public List<MenuItem> Items { get { return items; } }
 
-        private DateTime Date { get; set; }
+        public DateTime Date { get; set; }
 
-        DateTime date = DateTime.Now;
 
                      
         public Category category{ get; private set; }
 
+        
 
 
-        public Menu (string menuName,Category category)
+        public Menu (string menuName,Category category )
         {
             this.category = category;
             MenuName = menuName;
-            this.Date = date;
-            //this.dateMenu = GetDate();
+            dateMenuUpdated = DateTime.Now;
+        }
+/*
+        public Menu ()
+        {
+            List<MenuItem> items = MenuItems;
         }
 
-      
+      */
         public List<MenuItem> GetMenus()
         {
             return MenuItems;
@@ -46,7 +53,7 @@ namespace Restaurant
       
         public DateTime GetDate()
         {
-           return Date;
+           return dateMenuUpdated;
         }
       
         
@@ -55,6 +62,7 @@ namespace Restaurant
         {
            
             MenuItems.Add(item);
+            dateMenuUpdated = DateTime.Now;
             return MenuItems;
         }
 
@@ -62,6 +70,7 @@ namespace Restaurant
         {
 
             MenuItems.Remove(item);
+            dateMenuUpdated = DateTime.Now;
             return MenuItems;
         }
 
@@ -70,7 +79,7 @@ namespace Restaurant
             string itemsMenu = "";
             foreach (var item in MenuItems)
             {
-                itemsMenu = itemsMenu + item.ItemName + " , " ;
+                itemsMenu = itemsMenu + item.ItemName + " \n " ;
 
             }
             return itemsMenu;
